@@ -3,7 +3,7 @@ tasks = []
 print("Welcome to TaskTracker!")
 
 while True:
-    print("\nOptions: 1. Add  2. List  3. Remove  4. Exit") 
+    print("\nOptions: 1. Add  2. List  3. Remove  4. Exit") #dispays menu
     choice = input("Choose: ")
 
     if choice == '1':
