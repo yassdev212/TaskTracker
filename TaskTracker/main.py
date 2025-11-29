@@ -3,7 +3,7 @@ tasks = []
 print("Welcome to TaskTracker!")
 
 while True:
-    print("\nOptions: 1. Add Task  2. List Tasks  3. Exit") 
+    print("\nOptions: 1. Add  2. List  3. Remove  4. Exit") 
     choice = input("Choose: ")
 
     if choice == '1':
@@ -11,10 +11,18 @@ while True:
         tasks.append(task)
         print("Task added.")
 
-    elif choice == '2': 
+    elif choice == '2':
         print("\nYour Tasks:")
         for t in tasks:
             print(t)
 
     elif choice == '3': 
+        task_to_remove = input("Enter name of task to remove: ")
+        if task_to_remove in tasks:
+            tasks.remove(task_to_remove)
+            print("Task removed.")
+        else:
+            print("Task not found.")
+
+    elif choice == '4':
         break
