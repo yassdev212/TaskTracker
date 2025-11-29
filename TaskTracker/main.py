@@ -12,9 +12,9 @@ while True:
         print("Task added.")
 
     elif choice == '2':
-        print("\nYour Tasks:")
-        for t in tasks:
-            print(t)
+        print(f"\n--- Current Tasks ({len(tasks)} total) ") 
+        for task in tasks:
+         print("- " + task)
 
     elif choice == '3': 
         task_to_remove = input("Enter name of task to remove: ")
